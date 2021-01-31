@@ -22,7 +22,7 @@ function Map()
     })
     useEffect((()=>{
         if(!sensors.loaded)
-        axios.get("http://localhost:5000/apI/sensor")
+        axios.get("/api/sensor")
             .then(response=>{
                 setSensors({sensorArray:response.data,loaded:true})
             })

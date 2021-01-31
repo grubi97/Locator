@@ -11,7 +11,7 @@ function Graphs()
     useEffect(()=>{
         if(!loaded.loaded)
         {
-            axios.get("http://localhost:5000/apI/sensor")
+            axios.get("/api/sensor")
                 .then(response=>{
                     let dataSample=response.data
                     let formatedTemperatures=[]

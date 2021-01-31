@@ -13,7 +13,7 @@ function Add()
     const submit=event=>
     {
         event.preventDefault()
-        axios.post("http://localhost:5000/apI/sensor",{
+        axios.post("/api/sensor",{
             "latitude":latitude,
             "longitude":longitude,
             "password":password,
