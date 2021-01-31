@@ -16,17 +16,19 @@ namespace Persistence
         public DbSet<Sensor> Sensors { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
+        // protected override void OnModelCreating(ModelBuilder builder)
+        // {
             
-            builder.Entity<Reading>()
-                    .HasOne(u => u.Sensor)
-                    .WithMany(a => a.Readings)
-                    .HasForeignKey(u => u.SensorId);
+
+
+        //     builder.Entity<Reading>()
+        //             .HasOne(u => u.Sensor)
+        //             .WithMany(a => a.Readings)
+        //             .HasForeignKey(u => u.SensorId);
 
 
 
-        }
+        // }
     }
 
 
